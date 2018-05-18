@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting to Philosophy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="fade-in" id="input-form">
+            <h1>Getting to Philosophy</h1>
+            <form id="wiki-form">
+                <input id="url" name="url" type="url" placeholder="Starting Wikipedia URL"/>
+                <div id="error" style="display:none;">Please enter a proper Wikipedia link.</div>    
+            </form>
+            <div class="button-container">
+                <button onclick="getRandom()">Random</button>
+                <button onclick="getPath()">Submit</button>
+            </div>
+            
+        </div>
+        <div style="display:none;" id="loading">
+            <img src="svg/Spin-1s-200px.svg" alt="Loading">
+        </div>
+        <div class="fade-in" id="solution">
+            <h2 id="message"></h2>
+            <div id="path"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

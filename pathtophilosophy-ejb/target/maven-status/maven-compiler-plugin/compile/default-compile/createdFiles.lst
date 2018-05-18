@@ -1,0 +1,7 @@
+com/bento/sessionbeans/GetArticlesBean.class
+com/bento/sessionbeans/GetArticlesBeanLocal.class
+com/bento/entitybeans/Articles_.class
+com/bento/entitybeans/Articles.class
+com/bento/utils/Crawler.class
+com/bento/sessionbeans/AddArticlesBean.class
+com/bento/sessionbeans/AddArticlesBeanLocal.class

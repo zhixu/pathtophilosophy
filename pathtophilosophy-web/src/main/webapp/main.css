@@ -1,0 +1,170 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%
+}
+
+ button {
+    background-color: #6C94BF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    transition: .3s ease-out;
+}
+
+
+button:hover {
+    background-color: #2F5B91;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#error {
+    text: red;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16;
+}
+
+#loading {
+    display: block;
+    margin: auto;
+}
+
+#path {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#input-form {
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    width: 500px;
+}
+
+.article-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px 15px;
+    border-left: 4px #2F5B91 solid;
+    transition: .3s ease-out;
+}
+
+.blue-block {
+    background: #6C94BF;
+}
+
+.green-block {
+    background: #77dd77;
+}
+
+.red-block {
+    background: #ff6961;
+}
+
+.symbol {
+    opacity: .1;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow {
+    background: url(svg/arrow-right.svg) center center no-repeat;
+}
+
+.check {
+    background: url(svg/checkmark.svg) center center no-repeat;
+}
+
+.cross {
+    background: url(svg/cross.svg) center center no-repeat;
+}
+
+.article-block:hover {
+    transform: translate(5px, 0);
+}
+
+.fade-in {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+#loading {
+    text-align: center;
+}
+
+#solution {
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
