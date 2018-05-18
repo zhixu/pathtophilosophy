@@ -1,14 +1,14 @@
-![screenshot.png]
+![Project screenshot](screenshot.png)
 
-#Path to Philosophy
+# Path to Philosophy
 
-##Getting Started
+## Getting Started
 
 This application uses Payara 5.1, MySQL 5.7 and JDK 8. It's been run and tested in Ubuntu 18.04.
 
 To get the project running, we'll set up the MySQL database, configure the Payara server and deploy the application (which has already been built and included in the GitHub repository).
 
-###Prerequisites
+### Prerequisites
 1. Install [Payara](https://blog.payara.fish/installing-payara-server-on-ubuntu)
 
 2. Install MySQL 5.7
@@ -19,7 +19,7 @@ sudo apt-get install mysql-server
 ```
 
 
-###Setting up MySQL
+### Setting up MySQL
 We're going to be creating a *philosophy_db* using the provided *bento_philosophy.sql* file.
 
 1. Log in to MySQL database using root.
@@ -38,7 +38,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'philosophy_db_user'@'localhost' IDENTIFIED BY 'b
 ```
 
 
-###Setting up Payara
+### Setting up Payara
 1. Start up Payara
 ```
 cd payara5/glasshfish/bin
@@ -77,7 +77,7 @@ Pool Name: philosophy_db_pool
 10. Click "OK".
 
 
-###Deploying the EAR file
+### Deploying the EAR file
 1. While you're still in the Payara Server Console (localhost:4848), navigate to the Applications tab.
 
 2. Click "Deploy..."
@@ -87,6 +87,6 @@ Pool Name: philosophy_db_pool
 4. Click "OK". The application should now be deployed.
 
 
-###Navigating to the project in browser
+### Navigating to the project in browser
 Navigate to http://localhost:8080/pathtophilosophy-web/ to see the complete project.
 
